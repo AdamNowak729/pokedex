@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Pokemons</h1>
+  
+  <div class="row mb-3">
+    <div class="col-md-8 offset-md-2">
+      <input 
+        type="text" 
+        [(ngModel)]="query" 
+        (input)="searchPokemons()" 
+        placeholder="Search Pokémon" 
+        class="form-control"
+      >
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let pokemon of pokemons">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title text-capitalize">{{ pokemon.name }}</h5>
+          <a [routerLink]="['/pokemon', pokemon.name]" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button (click)="loadMore()" class="btn btn-secondary">Load More</button>
+  </div>
+</div>

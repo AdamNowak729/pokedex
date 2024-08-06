@@ -1,0 +1,25 @@
+.card {
+    margin-top: 20px;
+  }
+  
+  .img-fluid {
+    max-height: 300px;
+    border-radius: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #ffcb05;
+    border-color: #ffcb05;
+    color: #3b4cca;
+  
+    &:hover {
+      background-color: #ffcc00;
+      border-color: #ffcc00;
+      color: #2c387e;
+    }
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa;
+  }
+  
