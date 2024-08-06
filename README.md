@@ -5,27 +5,11 @@ REST API built using [NestJS](https://nestjs.com) and a client-side single-page
 application built in [Angular](https://angular.dev).
 
 ## Prerequisites
-* [Node.js v20](https://nodejs.org/en)
-
-## Setup
-1. Clone the repository.
-2. Install dependencies:
-    ```shell
-    cd /path/to/cloned/pokedex/
-    cd api/
-    npm install
-    cd ../app/
-    npm install
-    ```
+[Docker](https://docs.docker.com/engine/release-notes/27.1/)
 
 ## Run
-In two separate shells, start the API and app:
+In project root directory, run :
 ```shell
-cd api/
-npm run start
-```
-```shell
-cd app/
-npm run start
+docker compose up
 ```
 Both the API and app will rebuild as changes are made to them.
